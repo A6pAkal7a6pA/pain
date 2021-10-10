@@ -1,0 +1,541 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    min-height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*--------------------*/
+
+@font-face {
+    font-family: "Moyenage";
+    src: url("../font/Moyenage.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Resavska";
+    src: url("../font/ResavskaBG.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+body {
+    background-image: url(../img/bg.jpg);
+
+    padding: 115px 0 400px 0;
+}
+
+/*   intro  */
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* background: #020202; */
+}
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 110px 0;
+}
+.intro__image {
+    max-width: 430px;
+    width: 100%;
+    height: 100%;
+    margin: 0 20px 0 0;
+}
+.intro__image img {
+    width: 100%;
+    height: 100%;
+}
+.intro__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro-content {
+    max-width: 610px;
+}
+.intro-content__image {
+    max-width: 153px;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 50px 0;
+}
+.intro-content__text {
+    font-family: "Resavska";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #cfcfb0;
+}
+
+/* join */
+
+.join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Moyenage";
+    margin-bottom: 180px;
+}
+.join__countdown {
+}
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 305px;
+    margin: 0 0 20px 0;
+}
+.countdown__item {
+}
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.countdown-item__digit {
+    font-size: 50px;
+    line-height: 52px;
+    text-shadow: -10px 10px 20px rgba(255, 248, 186, 0.1);
+    -webkit-text-stroke-width: 1px;
+    background: -webkit-linear-gradient(270deg, #ffffda 1.37%, #252525 118.09%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    color: #020202;
+}
+.countdown-item__symbol {
+    font-size: 32px;
+    line-height: 32px;
+    color: rgba(254, 255, 218, 0.3);
+}
+.join__button {
+    padding: 22px 120px;
+    background: url("../img/btn.svg") center no-repeat;
+    cursor: pointer;
+    color: #feffda;
+}
+
+.join__link {
+    font-size: 32px;
+    line-height: 32px;
+}
+.join__button:hover {
+    color: #cdcfa8;
+}
+
+/*                hero */
+
+.hero {
+    margin-bottom: 630px;
+}
+.hero__item {
+    margin-bottom: 90px;
+}
+.hero__row {
+}
+.hero-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+.hero-row__image {
+    max-width: 145px;
+    width: 100%;
+    height: 100%;
+    margin: 0 20px 0 0;
+}
+.hero-row__image img {
+    width: 100%;
+    height: 100%;
+}
+.hero-row__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-row__title {
+    font-family: "Moyenage";
+    font-size: 50px;
+    line-height: 50px;
+    text-shadow: -10px 10px 20px rgba(255, 248, 186, 0.1);
+    -webkit-text-stroke-width: 1px;
+    background: -webkit-linear-gradient(270deg, #ffffda 1.37%, #252525 118.09%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    color: #020202;
+    position: relative;
+    margin: 0 0 20px 0;
+}
+.hero-row__title::after {
+    content: "";
+    height: 30px;
+    width: 40px;
+    background: url(../img/crusade-right-arrow.svg) no-repeat;
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hero-row__text {
+    color: #cfcfb0;
+    font-family: "Resavska";
+    font-size: 18px;
+    line-height: 120%;
+}
+.hero__subrow {
+    font-family: "Moyenage";
+    font-size: 28px;
+    line-height: 120%;
+    color: rgba(207, 207, 176, 0.3);
+    text-align: center;
+}
+
+.hero__subrow.unique {
+    color: #ffffff;
+    background: -webkit-linear-gradient(-91deg, #ffffff 5%, #ffffff2f 53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 58px;
+}
+
+.red {
+    -webkit-text-fill-color: red;
+}
+.yellow {
+    -webkit-text-fill-color: #c9c998;
+}
+
+/*    tokenomic   */
+
+.tokenomic {
+    margin-bottom: 170px;
+}
+
+.tokenomic__title {
+    margin-bottom: 80px;
+}
+.title {
+    font-family: "Moyenage";
+    background: -webkit-linear-gradient(
+        -90deg,
+        #feffcb 19.14%,
+        rgba(190, 186, 94, 0.770051) 87.42%,
+        rgba(190, 186, 94, 0.770051) 87.42%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    width: 185px;
+    height: 6px;
+    bottom: 0;
+    left: 50%;
+    background: url("../img/title-underline.svg");
+    transform: translateX(-50%);
+}
+.tokenomic__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+
+.tokenomic-item {
+    flex: 0 1 50%;
+    /* width: 100%; */
+    /* margin: 0 20px 50px 20px; */
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+.tokenomic-item__title {
+    font-family: "Moyenage";
+    font-size: 50px;
+    line-height: 50px;
+    text-shadow: -10px 10px 20px rgba(255, 248, 186, 0.1);
+    -webkit-text-stroke-width: 1px;
+    background: -webkit-linear-gradient(270deg, #ffffda 1.37%, #252525 118.09%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    color: #020202;
+    position: relative;
+    margin: 0 0 18px 0;
+    display: inline-flex;
+}
+
+.tokenomic-item__title::after {
+    content: "";
+    height: 30px;
+    width: 110px;
+    background: url(../img/tokenomik-4p.svg) no-repeat;
+    position: absolute;
+    right: -130px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tokenomic-item__text {
+    font-family: "Resavska";
+    font-size: 22px;
+    line-height: 28px;
+    color: #cfcfb0;
+}
+
+/*  allocation   */
+.allocation {
+    margin-bottom: 145px;
+}
+.allocation__title {
+    margin-bottom: 80px;
+}
+
+.allocation__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.allocation__item {
+    margin-bottom: 60px;
+}
+.allocation-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 196px;
+    width: 100%;
+}
+.allocation-item__digit {
+    font-family: "Moyenage";
+    font-size: 70px;
+    line-height: 70px;
+    text-shadow: -10px 10px 20px rgba(255, 248, 186, 0.1);
+    -webkit-text-stroke-width: 1px;
+    background: -webkit-linear-gradient(270deg, #ffffda 1.37%, #252525 118.09%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    color: #020202;
+    margin-right: 7px;
+}
+.allocation-item__content {
+}
+.allocation-item__percent {
+}
+.allocation-item__title {
+    font-family: "Resavska";
+    font-size: 18px;
+    line-height: 120%;
+    color: #cfcfb0;
+}
+.allocation-item__subtitle {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(207, 207, 176, 0.5);
+}
+
+/*  info    */
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info__image {
+    max-width: 430px;
+    width: 100%;
+    height: 100%;
+    margin-right: 65px;
+}
+.info__image img {
+    width: 100%;
+    height: 100%;
+}
+.info__inner {
+}
+.info__powered {
+}
+.powered {
+    margin-bottom: 110px;
+}
+.powered__title {
+    margin-bottom: 40px;
+}
+
+.powered__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.powered__item {
+    margin: 0 50px;
+}
+.info__contacts {
+}
+.contacts {
+}
+.contacts__title {
+    font-family: "Moyenage";
+    background: -webkit-linear-gradient(
+        -90deg,
+        #feffcb 19.14%,
+        rgba(190, 186, 94, 0.770051) 87.42%,
+        rgba(190, 186, 94, 0.770051) 87.42%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contacts__title::after,
+.contacts__title::before {
+    content: "";
+    position: absolute;
+    width: 74px;
+    height: 58px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contacts__title::after {
+    right: 0px;
+    background: url("../img/right-join.svg") no-repeat;
+}
+.contacts__title::before {
+    left: 0px;
+    background: url("../img/left-join.svg") no-repeat;
+}
+
+.contacts__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contacts__item {
+    margin: 0 30px;
+    position: relative;
+}
+.contacts__item::after{
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -16px;
+    background: url("../img/external-link.svg") no-repeat;
+}
+
+.contacts__link {
+    font-family: "Resavska";
+    font-size: 18px;
+    line-height: 120%;
+    color: #cfcfb0;
+}
