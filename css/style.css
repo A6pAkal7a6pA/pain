@@ -632,6 +632,7 @@ body {
 .contacts {
     max-width: 610px;
     width: 100%;
+    margin: 0 auto;
 }
 .contacts__title {
     text-align: center;
@@ -688,6 +689,9 @@ body {
     align-items: center;
     max-width: 110px;
     width: 100%;
+}
+.contacts__link:hover {
+    color: #7e513d;
 }
 .contacts__item img {
     background: linear-gradient(180deg, #ffffda 0%, rgba(255, 255, 218, 0.22) 100%);
