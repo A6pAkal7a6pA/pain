@@ -691,6 +691,7 @@ body {
 	color: #020202;
 	margin-right: 7px;
 	padding: 5px 0;
+	transform: translateY(12px);
 }
 .allocation-item__content {
 }
