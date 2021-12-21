@@ -208,8 +208,6 @@ body {
 		margin-bottom: 40px;
 	}
 	.main-page__title {
-		flex-direction: column;
-		margin-bottom: 40px;
 	}
 	.main-page__digit {
 		font-size: 64px;
