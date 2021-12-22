@@ -100,8 +100,8 @@ h6 {
 	font-weight: normal;
 }
 body {
-	background-image: url(../img/bg.jpg);
-
+	/* background-image: url(../img/bg.jpg); */
+	background-color: #0c0102;
 	padding: 0 0 115px 0;
 }
 
@@ -556,8 +556,8 @@ body {
 .tokenomic-item__title {
 	font-family: "Moyenage";
 	padding: 5px 0;
-	/* font-size: 50px;
-	line-height: 50px; */
+	font-size: 50px;
+	line-height: 50px;
 	text-shadow: -10px 10px 20px rgba(255, 248, 186, 0.1);
 	-webkit-text-stroke-width: 1px;
 	background: -webkit-linear-gradient(270deg, #ffffda 1.37%, #252525 118.09%);
