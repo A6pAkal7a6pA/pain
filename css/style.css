@@ -862,6 +862,9 @@ body {
 }
 
 @media (min-width: 1440px) {
+	.main-page {
+		margin-bottom: 50px;
+	}
 	.intro {
 		margin-bottom: 180px;
 	}
