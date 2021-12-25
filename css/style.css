@@ -162,7 +162,7 @@ body {
 	background: linear-gradient(178.38deg, #ffffda 1.37%, #252525 118.09%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	max-width: 301px;
+	max-width: 320px;
 }
 .main-partners {
 	max-width: 1000px;
@@ -968,7 +968,7 @@ body {
 	.main-page__text {
 		font-size: 24px;
 		line-height: 120%;
-		max-width: 308px;
+		max-width: 315px;
 		text-align: center;
 	}
 	.main-partners__item {
