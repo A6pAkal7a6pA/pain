@@ -852,6 +852,9 @@ body {
 	.main-page {
 		margin-bottom: 50px;
 	}
+	.main-page__image img {
+		max-width: 90%;
+	}
 	.intro {
 		margin-bottom: 180px;
 	}
@@ -888,6 +891,9 @@ body {
 	}
 	.contacts {
 		max-width: none;
+	}
+	.allocation__inner {
+		gap: 0 20px;
 	}
 }
 @media (max-width: 645px) {
