@@ -1,9 +1,12 @@
-// $('.powered__content').slick({
-//     infinite: true,
-//     slidesToShow: 2,
-//     slidesToScroll: 1,
-//     arrows: false
-// });
+
+$(document).ready(function () {
+	$('a[href^="#"]').click(function(){ // #1
+		let anchor = $(this).attr('href');  // #2
+		$('html, body').animate({           // #3
+		scrollTop:  $(anchor).offset().top  // #4
+		}, 600);                            // #5
+		});
+});
 
 let jsonParticles = {
 	"particles": {
