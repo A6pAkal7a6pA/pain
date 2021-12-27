@@ -859,6 +859,22 @@ body {
 	}
 }
 
+@media (max-height: 580px) {
+	.main-page__image img {
+		max-width: 70%;
+	}
+}
+@media (max-height: 545px) {
+	.main-page__image img {
+		max-width: 60%;
+	}
+}
+@media (max-height: 520px) {
+	.main-page__image img {
+		max-width: 50%;
+	}
+}
+
 @media (min-width: 1440px) {
 	.main-page {
 		margin-bottom: 50px;
