@@ -848,13 +848,24 @@ body {
 
 }
 
+@media (max-height: 630px) {
+	.main-page__image img {
+		max-width: 90%;
+	}
+}
+@media (max-height: 600px) {
+	.main-page__image img {
+		max-width: 80%;
+	}
+}
+
 @media (min-width: 1440px) {
 	.main-page {
 		margin-bottom: 50px;
 	}
-	.main-page__image img {
+	/* .main-page__image img {
 		max-width: 90%;
-	}
+	} */
 	.intro {
 		margin-bottom: 180px;
 	}
