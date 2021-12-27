@@ -190,7 +190,6 @@ body {
 .main-more__inner {
 }
 
-
 @keyframes impulseArrow {
 	0% {
 		transform: translateY(-10px);
@@ -262,7 +261,6 @@ body {
 		flex-direction: column;
 	}
 	.intro__image {
-
 	}
 	.intro-content__image {
 		display: none;
@@ -437,8 +435,8 @@ body {
 .hero-row__text {
 	color: #cfcfb0;
 	font-family: "Resavska";
-	font-size: 18px;
-	line-height: 120%;
+	font-size: 22px;
+	line-height: 28px;
 	max-width: 715px;
 }
 .hero__subrow {
@@ -452,7 +450,7 @@ body {
 .hero__subrow.unique {
 	color: #ffffff;
 	/* background: -webkit-linear-gradient(-45deg, #ffffff 50%, rgba(255, 255, 255, 0.5) 15%); */
-	background: radial-gradient(177.21% 229.24% at 55.38% -4.41%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+	background: radial-gradient(177.21% 229.24% at 55.38% -4.41%, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -581,7 +579,7 @@ body {
 	width: 110px;
 	background: url(../img/tokenomik-4p.svg) no-repeat;
 	position: absolute;
-	right: -130px;
+	right: -120px;
 	top: 50%;
 	transform: translateY(-50%);
 }
@@ -735,7 +733,6 @@ body {
 	margin-bottom: 80px;
 }
 .powered__title {
-
 	margin-bottom: 40px;
 }
 
@@ -779,7 +776,6 @@ body {
 }
 .contacts__title {
 	text-align: center;
-	
 }
 .contacts__title-inner {
 	font-family: "Moyenage";
@@ -805,7 +801,6 @@ body {
 	flex-wrap: wrap;
 	width: 100%;
 	gap: 30px 60px;
-
 }
 .contacts__item {
 	/* margin: 0 15px 30px 15px;
@@ -845,7 +840,6 @@ body {
 	line-height: 120%;
 	color: #fff;
 	margin-right: 8px;
-
 }
 
 @media (max-height: 630px) {
@@ -1011,11 +1005,11 @@ body {
 	.main-partners__row {
 		gap: 25px 35px;
 	}
-	.main-more .main-more__inner img{
+	.main-more .main-more__inner img {
 		width: 68px;
 		height: 68px;
 	}
-	.tokenomic__content{
+	.tokenomic__content {
 		gap: 40px;
 	}
 	.partners__content {
@@ -1024,15 +1018,14 @@ body {
 }
 @media (max-width: 375px) {
 	.main-page__inner {
-    padding: 45px 15px 10px 15px;
-    justify-content: center;
-}
+		padding: 45px 15px 10px 15px;
+		justify-content: center;
+	}
 	.main-partners__row {
 		gap: 25px 19px;
 	}
 	.main-page__digit {
 		margin-right: 10px;
-
 	}
 	.main-page__text {
 		font-size: 22px;
@@ -1044,4 +1037,3 @@ body {
 		gap: 30px;
 	}
 }
-
