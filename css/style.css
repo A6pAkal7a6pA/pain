@@ -842,18 +842,18 @@ body {
 	margin-right: 8px;
 }
 
-@media (max-height: 630px) {
+@media (max-height: 655px) {
 	.main-page__image img {
 		max-width: 90%;
 	}
 }
-@media (max-height: 600px) {
+@media (max-height: 623px) {
 	.main-page__image img {
 		max-width: 80%;
 	}
 }
 
-@media (max-height: 580px) {
+@media (max-height: 596px) {
 	.main-page__image img {
 		max-width: 70%;
 	}
