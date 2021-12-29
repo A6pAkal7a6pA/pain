@@ -127,7 +127,7 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	padding: 20px 10px;
+	padding: 10px;
 }
 .main-page__image {
 	text-align: center;
@@ -177,7 +177,7 @@ body {
 	gap: 20px 25px;
 }
 .main-partners__row:not(:last-child) {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .main-partners__item {
 }
