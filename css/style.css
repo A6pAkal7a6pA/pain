@@ -299,6 +299,9 @@ body {
 	/* .intro__image img {
 		max-width: 276px;
 	} */
+	.main-partners {
+		display: none;
+	}
 }
 
 /* join */
@@ -967,7 +970,7 @@ body {
 @media (max-width: 425px) {
 	.main-page__inner {
 		padding: 45px 25px 10px 25px;
-		justify-content: flex-start;
+		justify-content: space-between;
 	}
 	.main-page__title {
 		display: flex;
