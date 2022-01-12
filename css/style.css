@@ -970,12 +970,13 @@ body {
 @media (max-width: 425px) {
 	.main-page__inner {
 		padding: 45px 25px 10px 25px;
-		justify-content: space-between;
+		justify-content: space-evenly;
 	}
 	.main-page__title {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-direction: column;
 	}
 	.main-page__image img {
 		max-width: 231px;
