@@ -1,0 +1,82 @@
+
+.join {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: "Moyenage";
+	margin-bottom: 140px;
+}
+.join__countdown {
+}
+.countdown {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 305px;
+	margin: 0 0 20px 0;
+}
+.countdown__item {
+}
+.countdown-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.countdown-item__digit {
+	font-size: 50px;
+	line-height: 52px;
+	color: #020202;
+	font-family: "Moyenage";
+	background: -webkit-linear-gradient(-90.38deg, #ffffda 1.37%, #252525 118.09%);
+	/* background: linear-gradient(178.38deg, #FFFFDA 1.37%, #252525 118.09%); */
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-background-clip: text;
+	-webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+}
+.countdown-item__symbol {
+	font-size: 32px;
+	line-height: 32px;
+	color: rgba(254, 255, 218, 0.3);
+}
+.join__button {
+	padding: 22px 120px;
+	background: url("../img/btn.svg") center no-repeat;
+	cursor: pointer;
+	color: #feffda;
+}
+
+.join__link {
+	font-size: 32px;
+	line-height: 32px;
+}
+.join__button:hover {
+	color: #cdcfa8;
+}
+@media (max-width: 600px) {
+	.join {
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 500px) {
+	.join__button {
+		background: url(../img/btn-mob-bg.png) center no-repeat;
+		padding: 22px 100px;
+	}
+	.join__link {
+		font-size: 26px;
+		line-height: 26px;
+	}
+	.countdown-item__digit {
+		line-height: 39px;
+		font-size: 39px;
+	}
+	.countdown-item__symbol {
+		font-size: 26px;
+		line-height: 26px;
+	}
+}

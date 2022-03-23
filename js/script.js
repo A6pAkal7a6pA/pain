@@ -1,11 +1,11 @@
 
 $(document).ready(function () {
-	$('a[href^="#"]').click(function(){ // #1
+	$('a[href^="#"]').click(function () { // #1
 		let anchor = $(this).attr('href');  // #2
 		$('html, body').animate({           // #3
-		scrollTop:  $(anchor).offset().top  // #4
+			scrollTop: $(anchor).offset().top  // #4
 		}, 600);                            // #5
-		});
+	});
 });
 
 let jsonParticles = {
@@ -119,3 +119,18 @@ let jsonParticles = {
 };
 
 particlesJS("particles-js", jsonParticles);
+
+var lootboxSlider = $('.event-slider').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	fade: true,
+	dots: true,
+	autoplay: true,
+	autoplaySpeed: 5000,
+	pauseOnFocus: false,
+	pauseOnHover: false,
+	swipeToSlide: true
+});
+// lootboxSlider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
+// 	document.querySelector('.lootbox__digit-min').innerText = currentSlide + 1;
+// });

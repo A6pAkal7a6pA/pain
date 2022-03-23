@@ -1,0 +1,206 @@
+.event {
+	padding: 0 15px;
+	margin-bottom: 140px;
+	&__title {
+	}
+
+	&__subtitle {
+		font-family: "Moyenage";
+		background: radial-gradient(177.21% 229.24% at 55.38% -4.41%, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 120%;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	&__body {
+	}
+
+	&__slider {
+	}
+}
+
+.event-slider {
+	&__item.slick-slide {
+		display: flex;
+		align-items: center;
+		gap: 0 60px;
+		padding: 53px 2% 88px 2%; //95px
+	}
+
+	&__image {
+		background: url("../img/slider-bg.svg") center / cover no-repeat;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+		img {
+			max-width: 287px;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__content {
+	}
+
+	&__title {
+		font-family: "Moyenage";
+		font-weight: 400;
+		font-size: 28px;
+		line-height: 120%;
+		background: radial-gradient(177.21% 229.24% at 55.38% -4.41%, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		margin-bottom: 15px;
+	}
+
+	&__text {
+		font-family: "Resavska";
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 28px;
+		color: #cfcfb0;
+	}
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		// transform: translateY(-50%);
+		font-size: 0;
+		width: 54px;
+		height: 242px;
+		background: url("../img/slide-arrow-bg.svg") center / cover no-repeat;
+	}
+	.slick-arrow.slick-prev {
+		left: 0;
+		transform: translate(-50%, -50%);
+		&::after {
+			display: block;
+			margin: 0 auto;
+			content: "";
+			width: 26px;
+			height: 30px;
+			background: url("../img/event-arrow-left.svg") center center / contain no-repeat;
+		}
+	}
+	.slick-arrow.slick-next {
+		right: 0;
+		transform: translate(50%, -50%);
+		&::after {
+			display: block;
+			margin: 0 auto;
+			content: "";
+			width: 26px;
+			height: 30px;
+			background: url("../img/event-arrow-right.svg") center center / contain no-repeat;
+		}
+	}
+	.slick-dots {
+		display: flex;
+		text-align: center;
+		position: absolute;
+		width: 100%;
+		gap: 0 10px;
+		bottom: 0;
+		height: 20px;
+		li {
+			display: inline-block;
+			width: 100%;
+			button {
+				height: 6px;
+				font-size: 0;
+				background: #474747;
+				max-width: 100%;
+				width: 100%;
+				position: relative;
+				&::after {
+					position: absolute;
+					top: 0;
+					left: 0;
+					content: "";
+					width: 0%;
+					height: 100%;
+					background: linear-gradient(270deg, #feffda -0.6%, #e0e198 86.56%);
+				}
+				&:hover {
+					height: 14px;
+				}
+			}
+		}
+		.slick-active {
+			button {
+				&::after {
+					content: "";
+					transition: width 5s linear;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 891px) {
+	.event-slider__image img {
+		width: auto;
+	}
+	.event-slider__item.slick-slide {
+		gap: 0 30px;
+	}
+}
+
+@media (max-width: 724px) {
+	.event-slider {
+		position: relative;
+		&::before,
+		&::after {
+			content: "";
+			width: 100%;
+			height: 80px;
+			position: absolute;
+			left: 0;
+			// transform: rotate(180deg);
+		}
+		&::before {
+			top: 0;
+			background: url("../img/slider-part-bg.svg") center bottom / cover no-repeat;
+			transform: rotate(180deg);
+		}
+		&::after {
+			background: url("../img/slider-part-bg.svg") center bottom / cover no-repeat;
+			bottom: 50px;
+		}
+	}
+	.event-slider__image {
+		margin-bottom: 30px;
+		background: none;
+		img {
+			width: 100%;
+		}
+	}
+	.event-slider__item {
+		flex-direction: column;
+		background: url("../img/mob-slider-bg.svg") center / cover no-repeat;
+	}
+	.event .event-slider .slick-arrow {
+		top: auto;
+		width: 72px;
+		height: 54px;
+		bottom: -30px;
+		transform: translate(0, 100%);
+		background: linear-gradient(270deg, rgba(52, 0, 0, 0.5) 0%, rgba(140, 0, 0, 0.5) 100%);
+		border: 2px solid #a11d1d;
+	}
+	.event .event-slider .slick-arrow.slick-prev {
+	}
+	.event-slider .slick-arrow.slick-next {
+	}
+}

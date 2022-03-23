@@ -1,0 +1,111 @@
+
+.tokenomic {
+	margin-bottom: 100px;
+}
+
+.tokenomic__title {
+	margin-bottom: 80px;
+}
+.title {
+	font-family: "Moyenage";
+	background: -webkit-linear-gradient(
+		-90deg,
+		#feffcb 19.14%,
+		rgba(190, 186, 94, 0.770051) 87.42%,
+		rgba(190, 186, 94, 0.770051) 87.42%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-background-clip: text;
+	-webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+	font-size: 50px;
+	line-height: 50px;
+	position: relative;
+	text-align: center;
+}
+.title::after {
+	content: "";
+	position: absolute;
+	width: 185px;
+	height: 6px;
+	bottom: 0;
+	left: 50%;
+	background: url("../img/title-underline.svg");
+	transform: translateX(-50%);
+}
+.tokenomic__content {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	/* margin: 0 -20px; */
+	gap: 50px 40px;
+}
+
+.tokenomic-item {
+	max-width: 520px;
+	width: 100%;
+	/* width: 100%; */
+	/* margin: 0 20px 50px 20px; */
+	/* padding: 0 20px; */
+	/* margin-bottom: 50px; */
+}
+.tokenomic-item__title {
+	font-family: "Moyenage";
+	padding: 5px 0;
+	font-size: 50px;
+	line-height: 50px;
+	text-shadow: -10px 10px 20px rgba(255, 248, 186, 0.1);
+	-webkit-text-stroke-width: 1px;
+	background: -webkit-linear-gradient(270deg, #ffffda 1.37%, #252525 118.09%);
+	-webkit-background-clip: text;
+	-webkit-text-stroke: 3px transparent;
+	color: #020202;
+	position: relative;
+	margin: 0 0 18px 0;
+	display: inline-flex;
+}
+
+.tokenomic-item__title::after {
+	content: "";
+	height: 30px;
+	width: 110px;
+	background: url(../img/tokenomik-4p.svg) no-repeat;
+	position: absolute;
+	right: -130px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.tokenomic-item__text {
+	font-family: "Resavska";
+	font-size: 22px;
+	line-height: 28px;
+	color: #cfcfb0;
+}
+
+@media (max-width: 1030px) {
+	.tokenomic-item {
+		max-width: none;
+	}
+}
+@media (max-width: 600px) {
+	.tokenomic {
+		margin-bottom: 70px;
+	}
+	.tokenomic__title {
+		margin-bottom: 50px;
+	}
+	.tokenomic-item__title {
+		line-height: 39px;
+		font-size: 39px;
+	}
+	.tokenomic-item__text {
+		font-size: 16px;
+		line-height: 140%;
+	}
+	.tokenomic__content {
+		margin: 0;
+	}
+}
