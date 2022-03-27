@@ -249,9 +249,9 @@
 }
 
 @media (max-width: 500px) {
-  /* .intro__image img {
-		max-width: 276px;
-	} */
+  .intro {
+    margin-bottom: 85px;
+  }
   .main-partners {
     display: none;
   }
@@ -929,7 +929,7 @@
 
 @media (max-width: 600px) {
   .tokenomic {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
   .tokenomic__title {
     margin-bottom: 50px;
@@ -975,6 +975,12 @@
   background: url("../img/gamepaper-bg.svg") center/cover no-repeat;
   max-width: 396px;
   padding: 16px 0;
+}
+
+@media (max-width: 600px) {
+  .more {
+    margin-bottom: 80px;
+  }
 }
 
 .roadmap {
