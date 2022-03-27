@@ -131,6 +131,6 @@ var lootboxSlider = $('.event-slider').slick({
 	pauseOnHover: false,
 	swipeToSlide: true
 });
-// lootboxSlider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
-// 	document.querySelector('.lootbox__digit-min').innerText = currentSlide + 1;
-// });
+lootboxSlider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
+	document.querySelector('.event-slider__digit-current').innerText = currentSlide + 1;
+});

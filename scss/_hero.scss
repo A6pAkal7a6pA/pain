@@ -1,7 +1,11 @@
 
 .hero {
 	margin-bottom: 100px;
+	&__title {
+		margin-bottom: 80px;
+	}
 }
+
 .hero__item {
 	margin-bottom: 90px;
 }

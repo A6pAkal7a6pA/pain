@@ -1,0 +1,31 @@
+.more {
+	margin-bottom: 140px;
+	&__title {
+		font-family: "Moyenage";
+		font-size: 28px;
+		line-height: 120%;
+		text-align: center;
+		background: radial-gradient(177.21% 229.24% at 55.38% -4.41%, #ffffff 0%, rgba(255, 255, 255, 0.23) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		margin-bottom: 30px;
+	}
+
+	&__button {
+	}
+}
+.gamepaper {
+	&__body {
+		margin: 0 auto;
+		font-family: "Moyenage";
+		font-size: 32px;
+		line-height: 32px;
+		text-align: center;
+		color: #feffda;
+		background: url('../img/gamepaper-bg.svg') center / cover no-repeat;
+		max-width: 396px;
+		padding: 16px 0;
+	}
+}
