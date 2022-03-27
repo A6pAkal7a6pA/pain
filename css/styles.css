@@ -965,6 +965,7 @@
 }
 
 .gamepaper__body {
+  display: block;
   margin: 0 auto;
   font-family: "Moyenage";
   font-size: 32px;
