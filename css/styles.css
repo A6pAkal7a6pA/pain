@@ -1007,8 +1007,8 @@
 
 .road-item:not(:last-child)::after {
   content: "";
-  width: 182px;
-  height: 24px;
+  width: 186px;
+  height: 27px;
   position: absolute;
   left: 50%;
   bottom: 50px;
