@@ -31,7 +31,7 @@
 		display: flex;
 		align-items: center;
 		gap: 0 60px;
-		padding: 53px 2% 88px 2%; //95px
+		padding: 53px 0.6% 88px 0.6%; //95px
 	}
 	&__border-top,
 	&__border-bot {
@@ -49,8 +49,10 @@
 		justify-content: center;
 		padding: 20px;
 		position: relative;
-		img {
-			max-width: 287px;
+		video {
+			max-width: 287.5px;
+			max-height: 287.5px;
+			height: 100%;
 			width: 100%;
 			object-fit: cover;
 		}
@@ -58,6 +60,8 @@
 
 	&__content {
 		position: relative;
+		max-width: 515px;
+		width: 100%;
 	}
 
 	&__title {
@@ -82,6 +86,7 @@
 	}
 	.slick-arrow {
 		position: absolute;
+		z-index: 3;
 		top: 50%;
 		// transform: translateY(-50%);
 		font-size: 0;
@@ -252,7 +257,7 @@
 	.event-slider__image {
 		margin-bottom: 30px;
 		background: none;
-		img {
+		video {
 			width: 100%;
 		}
 	}
