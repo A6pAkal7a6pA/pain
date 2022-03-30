@@ -162,6 +162,12 @@
 		}
 	}
 }
+@media(min-width: 1440px) {
+	.event-slider__image video {
+		max-width: none;
+		max-height: 400px;
+	}
+}
 
 @media (max-width: 891px) {
 	.event-slider__image img {
@@ -179,7 +185,11 @@
 	.event-slider {
 		position: relative;
 		&__image {
-			padding: 20px;
+			padding: 10px;
+			video {
+				max-width: 100%;
+				max-height: none;
+			}
 		}
 		&__content {
 			// padding: 0 20px 20px 20px;

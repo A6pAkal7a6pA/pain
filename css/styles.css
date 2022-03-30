@@ -443,6 +443,13 @@
   width: 100%;
 }
 
+@media (min-width: 1440px) {
+  .event-slider__image video {
+    max-width: none;
+    max-height: 400px;
+  }
+}
+
 @media (max-width: 891px) {
   .event-slider__image img {
     width: auto;
@@ -460,7 +467,11 @@
     position: relative;
   }
   .event-slider__image {
-    padding: 20px;
+    padding: 10px;
+  }
+  .event-slider__image video {
+    max-width: 100%;
+    max-height: none;
   }
   .event-slider__content {
     text-align: center;
