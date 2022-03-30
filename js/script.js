@@ -125,8 +125,8 @@ var lootboxSlider = $('.event-slider').slick({
 	slidesToScroll: 1,
 	fade: true,
 	dots: true,
-	autoplay: true,
-	autoplaySpeed: 5000,
+	autoplay: false,
+	autoplaySpeed: 10000,
 	pauseOnFocus: false,
 	pauseOnHover: false,
 	swipeToSlide: true
