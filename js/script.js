@@ -134,3 +134,11 @@ var lootboxSlider = $('.event-slider').slick({
 lootboxSlider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
 	document.querySelector('.event-slider__digit-current').innerText = currentSlide + 1;
 });
+
+let activeDots = document.querySelector('.event-slider .slick-dots li.slick-active');
+
+activeDots.classList.remove('slick-active');
+
+setTimeout(() => {
+	activeDots.classList.add('slick-active');
+}, 0)
