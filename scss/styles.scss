@@ -159,7 +159,14 @@ body {
 	}
 }
 
+@media(min-width: 1680px) {
+	.container {
+		max-width: 1440px;
+	}
+}
+
 @media (min-width: 1440px) {
+
 	.main-page {
 		margin-bottom: 50px;
 	}
@@ -173,7 +180,7 @@ body {
 		margin-right: 140px;
 	}
 	.info__image {
-		transform: scale(1.5);
+		transform: scale(1.1);
 	}
 	.allocation {
 		margin-bottom: 200px;
@@ -216,23 +223,12 @@ body {
 	}
 }
 @media (max-width: 600px) {
-	.contacts__title::before {
-		left: 0px;
-	}
-	.contacts__title::after {
-		right: 0px;
-	}
 	.title {
 		font-size: 39px;
 		line-height: 39px;
 	}
-	.contacts__title-inner {
-		font-size: 39px;
-		line-height: 39px;
-	}
-	.contacts__links {
-		gap: 0 30px;
-		justify-content: center;
+	.container {
+		padding: 0 10px;
 	}
 }
 
