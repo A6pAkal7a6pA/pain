@@ -78,6 +78,17 @@
 .main-more {
 	transition: all 350ms ease-in-out;
 	animation: impulseArrow 1s infinite;
+	& .main-more__inner img.arrow-hover {
+		display: none;
+	}
+	&:hover {
+		.main-more__inner img.arrow-hover{
+			display: block;
+		}
+		.main-more__inner img.arrow-common{
+			display: none;
+		}
+	}
 }
 .main-more__inner {
 }

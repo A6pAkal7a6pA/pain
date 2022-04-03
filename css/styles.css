@@ -109,6 +109,18 @@
           animation: impulseArrow 1s infinite;
 }
 
+.main-more .main-more__inner img.arrow-hover {
+  display: none;
+}
+
+.main-more:hover .main-more__inner img.arrow-hover {
+  display: block;
+}
+
+.main-more:hover .main-more__inner img.arrow-common {
+  display: none;
+}
+
 @-webkit-keyframes impulseArrow {
   0% {
     -webkit-transform: translateY(-10px);
@@ -150,7 +162,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 0 110px 0;
+  margin: 0 0 132px 0;
   padding-top: 82px;
   -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
@@ -574,6 +586,16 @@
   background: -webkit-gradient(linear, right top, left top, from(rgba(52, 0, 0, 0.5)), to(rgba(140, 0, 0, 0.5)));
   background: linear-gradient(270deg, rgba(52, 0, 0, 0.5) 0%, rgba(140, 0, 0, 0.5) 100%);
   border: 2px solid #a11d1d;
+}
+
+.event .event-slider .slick-arrow:hover {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(140, 0, 0, 0.5)), color-stop(238.19%, rgba(52, 0, 0, 0.5)));
+  background: linear-gradient(270deg, rgba(140, 0, 0, 0.5) 0%, rgba(52, 0, 0, 0.5) 238.19%);
+}
+
+.event-slider .slick-arrow.slick-next {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(140, 0, 0, 0.5)), to(rgba(52, 0, 0, 0.5)));
+  background: linear-gradient(270deg, rgba(140, 0, 0, 0.5) 0%, rgba(52, 0, 0, 0.5) 100%);
 }
 
 @media (max-width: 724px) {
@@ -1332,12 +1354,6 @@
   margin-right: 8px;
 }
 
-@media (min-width: 1440px) {
-  .info {
-    padding-top: 80px;
-  }
-}
-
 @media (max-width: 600px) {
   .contacts__title::before {
     left: 0px;
@@ -1554,7 +1570,7 @@ body {
     margin-bottom: 50px;
   }
   .intro {
-    margin-bottom: 250px;
+    margin-bottom: 187px;
   }
   .intro__image {
     width: 100%;

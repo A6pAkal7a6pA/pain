@@ -106,6 +106,8 @@
 			height: 30px;
 			background: url("../img/event-arrow-left.svg") center center / contain no-repeat;
 		}
+
+
 	}
 	.slick-arrow.slick-next {
 		right: 0;
@@ -163,6 +165,7 @@
 	}
 }
 @media (min-width: 1440px) {
+
 	.event-slider__image video {
 		max-width: none;
 		max-height: 400px;
@@ -284,10 +287,14 @@
 	transform: translate(0, 100%);
 	background: linear-gradient(270deg, rgba(52, 0, 0, 0.5) 0%, rgba(140, 0, 0, 0.5) 100%);
 	border: 2px solid #a11d1d;
+	&:hover {
+		background: linear-gradient(270deg, rgba(140, 0, 0, 0.5) 0%, rgba(52, 0, 0, 0.5) 238.19%);
+	}
 }
 .event .event-slider .slick-arrow.slick-prev {
 }
 .event-slider .slick-arrow.slick-next {
+	background: linear-gradient(270deg, rgba(140, 0, 0, 0.5) 0%, rgba(52, 0, 0, 0.5) 100%);
 }
 
 @media (max-width: 724px) {
