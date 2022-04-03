@@ -1563,10 +1563,6 @@ body {
     max-width: 430px;
     margin-right: 140px;
   }
-  .info__image {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
   .allocation {
     margin-bottom: 200px;
   }
