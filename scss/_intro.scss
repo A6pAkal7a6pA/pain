@@ -55,6 +55,12 @@
 	color: #cfcfb0;
 	margin-bottom: 60px;
 }
+@media (min-width: 1680px) {
+	.intro-content__text {
+		font-size: 22px;
+    line-height: 28px;
+	}
+}
 
 @media (max-width: 836px) {
 	/* body {
