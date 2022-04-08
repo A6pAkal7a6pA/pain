@@ -28,6 +28,9 @@
 		background: url('../img/gamepaper-bg.svg') center / cover no-repeat;
 		max-width: 396px;
 		padding: 16px 0;
+		&:hover {
+			background: url("../img/button-bg-hover.svg") center / cover no-repeat;
+		}
 	}
 }
 @media (max-width: 600px ) {

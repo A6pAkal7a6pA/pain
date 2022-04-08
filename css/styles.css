@@ -309,7 +309,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0 60px;
   padding: 53px 0.4% 88px 0.4%;
 }
 
@@ -411,7 +414,7 @@
   content: "";
   width: 26px;
   height: 30px;
-  background: url("../img/event-arrow-right.svg") center/contain no-repeat;
+  background: url("../img/event-arrow-left.svg") center center/contain no-repeat;
 }
 
 .event-slider .slick-dots {
@@ -462,10 +465,10 @@
   width: 100%;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1680px) {
   .event-slider__image video {
     max-width: none;
-    max-height: 400px;
+    max-height: 500px;
   }
 }
 
@@ -585,24 +588,21 @@
 
 .event .event-slider .slick-arrow {
   top: auto;
-  width: 72px;
-  height: 54px;
+  width: 194px;
+  height: 52px;
   bottom: -30px;
   -webkit-transform: translate(0, 100%);
           transform: translate(0, 100%);
-  background: -webkit-gradient(linear, right top, left top, from(rgba(52, 0, 0, 0.5)), to(rgba(140, 0, 0, 0.5)));
-  background: linear-gradient(270deg, rgba(52, 0, 0, 0.5) 0%, rgba(140, 0, 0, 0.5) 100%);
-  border: 2px solid #a11d1d;
+  background: url("../img/arrow-event-bg.svg") center/cover no-repeat;
 }
 
 .event .event-slider .slick-arrow:hover {
-  background: -webkit-gradient(linear, right top, left top, from(rgba(140, 0, 0, 0.5)), color-stop(238.19%, rgba(52, 0, 0, 0.5)));
-  background: linear-gradient(270deg, rgba(140, 0, 0, 0.5) 0%, rgba(52, 0, 0, 0.5) 238.19%);
+  background: url("../img/arrow-event-hover.svg") center/cover no-repeat;
 }
 
 .event-slider .slick-arrow.slick-next {
-  background: -webkit-gradient(linear, right top, left top, from(rgba(140, 0, 0, 0.5)), to(rgba(52, 0, 0, 0.5)));
-  background: linear-gradient(270deg, rgba(140, 0, 0, 0.5) 0%, rgba(52, 0, 0, 0.5) 100%);
+  -webkit-transform: translate(0, 100%) rotate(180deg);
+          transform: translate(0, 100%) rotate(180deg);
 }
 
 @media (max-width: 724px) {
@@ -611,6 +611,29 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .event .event-slider .slick-arrow {
+    width: 72px;
+    height: 54px;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(52, 0, 0, 0.5)), to(rgba(140, 0, 0, 0.5)));
+    background: linear-gradient(270deg, rgba(52, 0, 0, 0.5) 0%, rgba(140, 0, 0, 0.5) 100%);
+    border: 2px solid #a11d1d;
+  }
+  .event .event-slider .slick-arrow:hover {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(140, 0, 0, 0.5)), color-stop(238.19%, rgba(52, 0, 0, 0.5)));
+    background: linear-gradient(270deg, rgba(140, 0, 0, 0.5) 0%, rgba(52, 0, 0, 0.5) 238.19%);
+  }
+  .event-slider .slick-arrow.slick-next {
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+    background: -webkit-gradient(linear, right top, left top, from(rgba(140, 0, 0, 0.5)), to(rgba(52, 0, 0, 0.5)));
+    background: linear-gradient(270deg, rgba(140, 0, 0, 0.5) 0%, rgba(52, 0, 0, 0.5) 100%);
+  }
+  .event-slider .slick-arrow.slick-next::after {
+    background: url("../img/event-arrow-right.svg") center/contain no-repeat;
   }
 }
 
@@ -1039,6 +1062,10 @@
   background: url("../img/gamepaper-bg.svg") center/cover no-repeat;
   max-width: 396px;
   padding: 16px 0;
+}
+
+.gamepaper__body:hover {
+  background: url("../img/button-bg-hover.svg") center/cover no-repeat;
 }
 
 @media (max-width: 600px) {
