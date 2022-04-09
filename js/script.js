@@ -128,15 +128,16 @@ var lootboxSlider = $('.event-slider').slick({
 	autoplay: true,
 	autoplaySpeed: 10000,
 	pauseOnFocus: false,
+	pauseOnDotsHover: false,
 	pauseOnHover: false,
 	swipeToSlide: true
 });
 lootboxSlider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
 	document.querySelector('.event-slider__digit-current').innerText = currentSlide + 1;
 });
-// lootboxSlider.on('touchstart', e => {
-//   lootboxSlider.slick('slickPlay');
-// });
+lootboxSlider.on('touchstart', e => {
+  lootboxSlider.slick('slickPlay');
+});
 
 let activeDots = document.querySelector('.event-slider .slick-dots li.slick-active');
 
